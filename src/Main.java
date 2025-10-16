@@ -6,6 +6,9 @@ public class Main {
         Notification<String> email = new EmailNotification();
         String result = send(text, email);
         System.out.println(result);
+        Notification<String> sms = new SmsNotification();
+        String result1 = send(text, sms);
+        System.out.println(result1);
     }
 
     private static String send(String text, Notification<String> notification) {
