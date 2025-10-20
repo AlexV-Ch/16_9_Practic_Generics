@@ -1,21 +1,20 @@
-public class Email {
-    private String adres;
+public class Push {
+    private String akkaunt;
     private String subject;
     private String text;
 
-
-    public Email(String adres, String subject, String text) {
-        this.adres = adres;
+    public Push(String akkaunt, String subject, String text) {
+        this.akkaunt = akkaunt;
         this.subject = subject;
         this.text = text;
     }
 
-    public String getAdres() {
-        return adres;
+    public String getAkkaunt() {
+        return akkaunt;
     }
 
-    public void setAdres(String adres) {
-        this.adres = adres;
+    public void setAkkaunt(String akkaunt) {
+        this.akkaunt = akkaunt;
     }
 
     public String getSubject() {
@@ -36,11 +35,10 @@ public class Email {
 
     @Override
     public String toString() {
-        return "Email{" +
-                "adres='" + adres + '\'' +
+        return "Push{" +
+                "akkaunt='" + akkaunt + '\'' +
                 ", subject='" + subject + '\'' +
                 ", text='" + text + '\'' +
                 '}';
     }
-
 }
